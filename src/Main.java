@@ -124,14 +124,15 @@ public class Main {
 		int[][] pat = patterns[num];
 		for (int i=0;i<pat.length;i++) {
 			int[] line = pat[i];
+			String s = "";
 			for (int j=0;j<line.length;j++) {
 				if (line[j]==1) {
-					System.out.print("*");
+					s+="*";
 				} else {
-					System.out.print(" ");
+					s+=" ";
 				}
 			}
-			System.out.println();
+			System.out.println(s.stripTrailing());
 		}
 
 	}
